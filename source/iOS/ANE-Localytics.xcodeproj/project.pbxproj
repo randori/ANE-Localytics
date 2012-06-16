@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE5017E31580CF1C00879AC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5017E21580CF1C00879AC1 /* Foundation.framework */; };
+		AE5017E91580CF1C00879AC1 /* ANE_Localytics.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5017E81580CF1C00879AC1 /* ANE_Localytics.m */; };
+		AE6276E4158950B7004E888A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6276E3158950B7004E888A /* libsqlite3.dylib */; };
+		AE6276E7158950BC004E888A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6276E6158950BC004E888A /* libz.dylib */; };
+		AECE8AAA158C02EF00567636 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AECE8AA1158C02EF00567636 /* FlashRuntimeExtensions.h */; };
+		AECE8AAB158C02EF00567636 /* LocalyticsDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = AECE8AA3158C02EF00567636 /* LocalyticsDatabase.h */; };
+		AECE8AAC158C02EF00567636 /* LocalyticsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AECE8AA4158C02EF00567636 /* LocalyticsDatabase.m */; };
+		AECE8AAD158C02EF00567636 /* LocalyticsSession.h in Headers */ = {isa = PBXBuildFile; fileRef = AECE8AA5158C02EF00567636 /* LocalyticsSession.h */; };
+		AECE8AAE158C02EF00567636 /* LocalyticsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AECE8AA6158C02EF00567636 /* LocalyticsSession.m */; };
+		AECE8AAF158C02EF00567636 /* LocalyticsUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = AECE8AA7158C02EF00567636 /* LocalyticsUploader.h */; };
+		AECE8AB0158C02EF00567636 /* LocalyticsUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = AECE8AA8158C02EF00567636 /* LocalyticsUploader.m */; };
+		AECE8AB1158C02EF00567636 /* WebserviceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = AECE8AA9158C02EF00567636 /* WebserviceConstants.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE5017DF1580CF1C00879AC1 /* libANE-Localytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libANE-Localytics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5017E21580CF1C00879AC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE5017E61580CF1C00879AC1 /* ANE-Localytics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ANE-Localytics-Prefix.pch"; sourceTree = "<group>"; };
+		AE5017E71580CF1C00879AC1 /* ANE_Localytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANE_Localytics.h; sourceTree = "<group>"; };
+		AE5017E81580CF1C00879AC1 /* ANE_Localytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANE_Localytics.m; sourceTree = "<group>"; };
+		AE6276E3158950B7004E888A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AE6276E6158950BC004E888A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AECE8AA1158C02EF00567636 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = "ANE-Localytics/src/FlashRuntimeExtensions.h"; sourceTree = "<group>"; };
+		AECE8AA3158C02EF00567636 /* LocalyticsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsDatabase.h; sourceTree = "<group>"; };
+		AECE8AA4158C02EF00567636 /* LocalyticsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsDatabase.m; sourceTree = "<group>"; };
+		AECE8AA5158C02EF00567636 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
+		AECE8AA6158C02EF00567636 /* LocalyticsSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsSession.m; sourceTree = "<group>"; };
+		AECE8AA7158C02EF00567636 /* LocalyticsUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsUploader.h; sourceTree = "<group>"; };
+		AECE8AA8158C02EF00567636 /* LocalyticsUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsUploader.m; sourceTree = "<group>"; };
+		AECE8AA9158C02EF00567636 /* WebserviceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE5017DC1580CF1C00879AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6276E7158950BC004E888A /* libz.dylib in Frameworks */,
+				AE6276E4158950B7004E888A /* libsqlite3.dylib in Frameworks */,
+				AE5017E31580CF1C00879AC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE5017D41580CF1C00879AC1 = {
+			isa = PBXGroup;
+			children = (
+				AECE8AA1158C02EF00567636 /* FlashRuntimeExtensions.h */,
+				AECE8AA2158C02EF00567636 /* Localytics */,
+				AE6276E6158950BC004E888A /* libz.dylib */,
+				AE6276E3158950B7004E888A /* libsqlite3.dylib */,
+				AE5017E41580CF1C00879AC1 /* ANE-Localytics */,
+				AE5017E11580CF1C00879AC1 /* Frameworks */,
+				AE5017E01580CF1C00879AC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE5017E01580CF1C00879AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE5017DF1580CF1C00879AC1 /* libANE-Localytics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE5017E11580CF1C00879AC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE5017E21580CF1C00879AC1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE5017E41580CF1C00879AC1 /* ANE-Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				AE5017E71580CF1C00879AC1 /* ANE_Localytics.h */,
+				AE5017E81580CF1C00879AC1 /* ANE_Localytics.m */,
+				AE5017E51580CF1C00879AC1 /* Supporting Files */,
+			);
+			path = "ANE-Localytics";
+			sourceTree = "<group>";
+		};
+		AE5017E51580CF1C00879AC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE5017E61580CF1C00879AC1 /* ANE-Localytics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AECE8AA2158C02EF00567636 /* Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				AECE8AA3158C02EF00567636 /* LocalyticsDatabase.h */,
+				AECE8AA4158C02EF00567636 /* LocalyticsDatabase.m */,
+				AECE8AA5158C02EF00567636 /* LocalyticsSession.h */,
+				AECE8AA6158C02EF00567636 /* LocalyticsSession.m */,
+				AECE8AA7158C02EF00567636 /* LocalyticsUploader.h */,
+				AECE8AA8158C02EF00567636 /* LocalyticsUploader.m */,
+				AECE8AA9158C02EF00567636 /* WebserviceConstants.h */,
+			);
+			name = Localytics;
+			path = "ANE-Localytics/src/Localytics";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE5017DD1580CF1C00879AC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECE8AAA158C02EF00567636 /* FlashRuntimeExtensions.h in Headers */,
+				AECE8AAB158C02EF00567636 /* LocalyticsDatabase.h in Headers */,
+				AECE8AAD158C02EF00567636 /* LocalyticsSession.h in Headers */,
+				AECE8AAF158C02EF00567636 /* LocalyticsUploader.h in Headers */,
+				AECE8AB1158C02EF00567636 /* WebserviceConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE5017DE1580CF1C00879AC1 /* ANE-Localytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5017EC1580CF1C00879AC1 /* Build configuration list for PBXNativeTarget "ANE-Localytics" */;
+			buildPhases = (
+				AE5017DB1580CF1C00879AC1 /* Sources */,
+				AE5017DC1580CF1C00879AC1 /* Frameworks */,
+				AE5017DD1580CF1C00879AC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ANE-Localytics";
+			productName = "ANE-Localytics";
+			productReference = AE5017DF1580CF1C00879AC1 /* libANE-Localytics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE5017D61580CF1C00879AC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = AE5017D91580CF1C00879AC1 /* Build configuration list for PBXProject "ANE-Localytics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE5017D41580CF1C00879AC1;
+			productRefGroup = AE5017E01580CF1C00879AC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE5017DE1580CF1C00879AC1 /* ANE-Localytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE5017DB1580CF1C00879AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5017E91580CF1C00879AC1 /* ANE_Localytics.m in Sources */,
+				AECE8AAC158C02EF00567636 /* LocalyticsDatabase.m in Sources */,
+				AECE8AAE158C02EF00567636 /* LocalyticsSession.m in Sources */,
+				AECE8AB0158C02EF00567636 /* LocalyticsUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE5017EA1580CF1C00879AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE5017EB1580CF1C00879AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE5017ED1580CF1C00879AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ANE_Localytics.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ANE-Localytics/ANE-Localytics-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE5017EE1580CF1C00879AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ANE_Localytics.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ANE-Localytics/ANE-Localytics-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE5017D91580CF1C00879AC1 /* Build configuration list for PBXProject "ANE-Localytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5017EA1580CF1C00879AC1 /* Debug */,
+				AE5017EB1580CF1C00879AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5017EC1580CF1C00879AC1 /* Build configuration list for PBXNativeTarget "ANE-Localytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5017ED1580CF1C00879AC1 /* Debug */,
+				AE5017EE1580CF1C00879AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE5017D61580CF1C00879AC1 /* Project object */;
+}
