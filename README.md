@@ -9,7 +9,8 @@ by Piotr Kościerzyński
 How to use
 ----------------
 1. Sign up for a free / premium Localytics account and create and application key https://dashboard.localytics.com/localytics_applications
-2. Add the ANE to you project, start a Localytics session when the app finishes loading: 
+2. Add the ANE to you project (https://github.com/randori/ANE-Localytics/downloads)
+   Start a Localytics session when the app finishes loading: 
    
    //Start Localytics session
    Localytics.startSession('APP-KEY');
