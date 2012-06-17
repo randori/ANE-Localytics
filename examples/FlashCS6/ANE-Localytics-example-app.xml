@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<application xmlns="http://ns.adobe.com/air/application/3.2">
+    <id>com.flashsimulations.Localytics</id>
+    <versionNumber>1.0</versionNumber>
+    <filename>Localytics</filename>
+    <description></description>
+    <!-- To localize the description, use the following format for the description element.
+	<description>
+		<text xml:lang="en">English App description goes here</text>
+		<text xml:lang="fr">French App description goes here</text>
+		<text xml:lang="ja">Japanese App description goes here</text>
+	</description>
+	-->
+    <name>Localytics</name>
+    <!-- To localize the name, use the following format for the name element.
+	<name>
+		<text xml:lang="en">English App name goes here</text>
+		<text xml:lang="fr">French App name goes here</text>
+		<text xml:lang="ja">Japanese App name goes here</text>
+	</name>
+	-->
+    <copyright></copyright>
+    <initialWindow>
+        <content>ANE-Localytics-example.swf</content>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <fullScreen>false</fullScreen>
+        <autoOrients>false</autoOrients>
+        <aspectRatio>portrait</aspectRatio>
+        <renderMode>gpu</renderMode>
+    </initialWindow>
+    <customUpdateUI>false</customUpdateUI>
+    <allowBrowserInvocation>false</allowBrowserInvocation>
+    <icon></icon>
+    <iPhone>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+        <InfoAdditions><![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]></InfoAdditions>
+        <!--
+<Entitlements>
+	<![CDATA[<key>keychain-access-groups</key><array><string>...</string></array>]]>
+</Entitlements>
+-->
+    </iPhone>
+    <android>
+        <manifestAdditions><![CDATA[<manifest><uses-permission android:name="android.permission.INTERNET"/></manifest>]]></manifestAdditions>
+    </android>
+    <versionLabel></versionLabel>
+    <supportedLanguages>en</supportedLanguages>
+    <version>1.0</version>
+    <extensions>
+        <extensionID>pl.randori.ane.Localytics</extensionID>
+    </extensions>
+</application>
