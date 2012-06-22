@@ -8,6 +8,7 @@ http://flashsimulations.com
 */
 package 
 {
+	import flash.desktop.NativeApplication;
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.display.MovieClip;
@@ -48,6 +49,27 @@ package
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			
 			addEventListener(Event.ADDED_TO_STAGE, onAdded);
+			
+			//Create an app here: https://dashboard.localytics.com/localytics_applications
+			//Start Localytics session
+			Localytics.startSession('APP_KEY');
+			
+			NativeApplication.nativeApplication.addEventListener(Event.ACTIVATE, applicationActivate_handler);
+			NativeApplication.nativeApplication.addEventListener(Event.DEACTIVATE, applicationDeactivate_handler);
+			NativeApplication.nativeApplication.addEventListener(Event.EXITING, applicationExiting_handler);
+		}
+		
+		
+		private function applicationActivate_handler(event:Event):void {
+			Localytics.openSession();
+		}
+		
+		private function applicationDeactivate_handler(event:Event):void {
+			Localytics.closeSession();
+		}
+		
+		private function applicationExiting_handler(event:Event):void {
+			Localytics.closeSession();
 		}
 		
 		private function getScaledBitmap(bitmapData:BitmapData, destScale:Number = 1.0):BitmapData {
@@ -78,9 +100,6 @@ package
 			this.logo_mc = new Bitmap(getScaledBitmap((new LogoAsset() as Bitmap).bitmapData, contentScale));
 			addChild(logo_mc);
 			
-			//Create an app here: https://dashboard.localytics.com/localytics_applications
-			//Start Localytics session
-			Localytics.startSession('APP-KEY');
 
 			Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;
 			

@@ -29,8 +29,9 @@
 					<arg line="
 						-package -target ane ${app.releasedir}/ANE_Localytics.ane ${app.extensionxmlfile} 
 						-swc ${app.swcfilename}
-						-platform iPhone-ARM library.swf libANE-Localytics.a 
+						-platform iPhone-ARM library.swf libANE-Localytics.a
 						-platformoptions ios-platformoptions.xml 
+						-platform Android-ARM library.swf ANE-Localytics.jar
 					"/>
 		</exec>
 		<delete file="${app.rootdir}/library.swf"/>

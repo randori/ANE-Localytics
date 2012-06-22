@@ -2,6 +2,13 @@
     <id>pl.randori.ane.Localytics</id>
     <versionNumber>1.0.0</versionNumber>
     <platforms>
+	    <platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>ANE-Localytics.jar</nativeLibrary>
+				<initializer>pl.randori.ane.LocalyticsExtension</initializer>
+				<finalizer>pl.randori.ane.LocalyticsExtension</finalizer>
+			</applicationDeployment>
+		</platform>
         <platform name="iPhone-ARM">
             <applicationDeployment>
                 <nativeLibrary>libANE-Localytics.a</nativeLibrary>

@@ -17,10 +17,10 @@
 *       notice, this list of conditions and the following disclaimer in the
 *       documentation and/or other materials provided with the distribution.
 *
-* THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY
+* THIS SOFTWARE IS PROVIDED BY All-Seeing Interactive ''AS IS'' AND ANY
 * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-* DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY
+* DISCLAIMED. IN NO EVENT SHALL All-Seeing Interactive BE LIABLE FOR ANY
 * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
@@ -59,13 +59,13 @@ package pl.randori.ane
 		
 		private static function initExtension():void {
 		
-			//iOS only
-			if (!isIOS) {
+			//iOS and Android only
+			if (!isIOS && !isAndroid) {
 				trace('ANE Localytics extension is not supported for this platform.');
 				return;
 			}
 			
-			if (!extensionContext) {
+			if ( !extensionContext ) {
 				extensionContext = ExtensionContext.createExtensionContext( EXTENSION_ID, null );
 				trace('ANE Localytics initialized!');
 			}
@@ -79,16 +79,45 @@ package pl.randori.ane
 		/**
 		 * Start Localytics session
 		 */
-		public static function startSession( localyticsAppId : String ) : void {
-			initExtension();
+		public static function startSession( localyticsAppId : String ) : void
+		{
+			if (!isSupported) return;
 			extensionContext.call( "startSession", localyticsAppId );
 		}
+		
+		/**
+		 * Close Localytics session
+		 */
+		public static function closeSession(uploadNow:Boolean = false) : void
+		{
+			if (!isSupported && !isAndroid) return;//not implemented on iOS
+			extensionContext.call( "closeSession", uploadNow );
+		}
+
+		/**
+		 * Close Localytics session
+		 */
+		public static function openSession(uploadNow:Boolean = false) : void
+		{
+			if (!isSupported && !isAndroid) return;//not implemented on iOS
+			extensionContext.call( "openSession", uploadNow );
+		}
+
+		/**
+		 * Close Localytics session
+		 */
+		public static function uploadSession() : void
+		{
+			if (!isSupported && !isAndroid) return;//not implemented on iOS
+			extensionContext.call( "uploadSession");
+		}
+
 		
 		/**
 		 * Tag an event.
 		 */
 		public static function tagEvent( eventName : String, eventParameters : Object = null ) : void {
-			initExtension();
+			if (!isSupported) return;
 
 			if(!eventParameters) {
 				extensionContext.call( "tagEvent", eventName );
@@ -107,7 +136,7 @@ package pl.randori.ane
 		* Tag screen.
 		*/
 		public static function tagScreen( eventName : String) : void {
-			initExtension();
+			if (!isSupported) return;
 			extensionContext.call( "tagScreen", eventName );
 		}
 				
@@ -115,6 +144,8 @@ package pl.randori.ane
 		 * Clean up
 		 */	
 		public static function dispose():void {
+			if (!extensionContext) return;
+			
 			extensionContext.dispose();
 			extensionContext = null;
 		}		
